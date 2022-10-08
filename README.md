@@ -1,9 +1,11 @@
-# Sanity Clean Content Studio
+# Avern Engine
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+> Backend
 
-Now you can do the following things:
+Content management for turn-based RPGs in the browser.
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+## Features
+
+- Manage content for [Avern Engine frontend](https://github.com/nsmarino/avern-frontend)
+- Template includes basic document types such as Interaction, Enemy and Item
+- Import GLTFs from Blender and assign content to different spawn points using custom Area Editor 

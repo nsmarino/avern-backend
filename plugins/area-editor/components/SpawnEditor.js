@@ -10,6 +10,7 @@ const SpawnEditor = ({ area, loader, params, availableReferences }) => {
 
   const updateSpawnReferences = (e, vertexName) => {
     const newSpawnRef = {
+      _key: vertexName,
       _type: "spawn",
       vertexName,
       entity: {
