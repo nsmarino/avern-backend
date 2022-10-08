@@ -1,6 +1,6 @@
 export default {
-    title: 'Area',
-    name: 'area',
+    title: 'Connection',
+    name: 'connection',
     type: 'document',
     fields: [
         {
@@ -8,12 +8,6 @@ export default {
             name: 'title',
             type: 'string',
             validation: Rule => Rule.required()
-        },
-        {
-          name: 'info',
-          title: 'Information',
-          type: 'blockContent',
-          description: 'Information about the area.',
         },
         {
             title: 'Mesh',
@@ -24,16 +18,8 @@ export default {
                 name: 'meshName',
                 type: 'string',
                 title: 'Mesh Name'
-              },
+              }
             ]
-        },
-        {
-          name: "spawns",
-          type: "array",
-          of: [
-            { type: "spawn" }
-          ],
-          readOnly: true,
-        },
+        }
     ]
 }

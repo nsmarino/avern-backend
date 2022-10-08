@@ -11,5 +11,8 @@ export default () =>
                     .id('player')
                     .schemaType("player")
                     .documentId("singleton-player")
-            )
+            ),
+        S.divider(),
+        ...S.documentTypeListItems()
+          .filter(listItem => !['player',].includes(listItem.getId()))
     ]);

@@ -1,6 +1,6 @@
 export default {
-    title: 'Field Enemy',
-    name: 'fieldEnemy',
+    title: 'Enemy',
+    name: 'enemy',
     type: 'document',
     fields: [
         {
