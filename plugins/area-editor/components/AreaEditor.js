@@ -46,7 +46,6 @@ const AreaEditor = () => {
     <div>
       <header style={headerStyle}>
         <h1>Area Editor</h1>
-        <p style={{maxWidth: "500px"}}>This is just a prototype of the Area Editor. The intention is to load each area in a 3d viewer with orbit controls, and highlight each spawn point. Clicking on a spawn point will open a modal that allows you to select content in a more intuitive way.</p>
           {
             areas.map(area => 
               <SpawnEditor 

@@ -22,6 +22,12 @@ export default {
                 title: 'Mesh Name'
               }
             ]
-          }
+        },
+        {
+          title: "Starting Area",
+          name:"start",
+          type: "reference",
+          to: [{type: "area"}]
+        }
     ]
 }

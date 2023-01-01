@@ -20,6 +20,14 @@ export default {
                 title: 'Mesh Name'
               }
             ]
+        }, 
+        {
+          title: "Interaction content",
+          name: "content",
+          type: "array",
+          of: [
+            { type: "contentNode" }
+          ]
         }
     ]
 }

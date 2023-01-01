@@ -10,16 +10,10 @@ export default {
             validation: Rule => Rule.required()
         },
         {
-            title: 'Mesh',
-            name: 'mesh',
-            type: 'file',
-            fields: [
-              {
-                name: 'meshName',
-                type: 'string',
-                title: 'Mesh Name'
-              }
-            ]
+          title: "Destination",
+          name:"destination",
+          type: "reference",
+          to: [{type: "area"}]
         }
     ]
 }

@@ -10,6 +10,7 @@ import Item from './documents/Item'
 
 import blockContent from "./objects/blockContent"
 import spawn from "./objects/spawn"
+import contentNode from './objects/contentNode'
 
 export default createSchema({
   name: 'default',
@@ -27,6 +28,7 @@ export default createSchema({
       // When added to this list, object types can be used as
       // { type: 'typename' } in other document schemas
       blockContent,
-      spawn
+      spawn,
+      contentNode,
   ]),
 })

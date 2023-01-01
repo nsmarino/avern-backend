@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Select } from '@sanity/ui'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+const loader = new GLTFLoader()
 
 import patchSpawnReferences from '../patchSpawnReferences'
 
 // TODO: Refactor so every variable isnt a variant of the word "spawn"
-const SpawnEditor = ({ area, loader, params, availableReferences }) => {
+const SpawnEditor = ({ area, params, availableReferences }) => {
   const [spawns, setSpawns] = useState([])
   const [spawnReferences, setSpawnReferences] = useState(area.spawns || [])
 
@@ -49,7 +51,7 @@ const SpawnEditor = ({ area, loader, params, availableReferences }) => {
 
   useEffect(() => {
     // I hate useEffect so much
-    patchSpawnReferences(area._id, spawnReferences)
+    patchSpawnReferences(area._id, spawnReferences.filter(ref=>ref.entity._ref != ''))
   }, [ spawnReferences ])
 
   return (
@@ -92,18 +94,6 @@ const SpawnReferenceSelect = ({spawn, options, selectedEntityId, handleChange}) 
                 }
               })
             }
-
-            {/* <optgroup label="Interactions">
-              <option></option>
-            </optgroup>
-
-            <optgroup label="Enemies">
-              <option></option>
-            </optgroup>
-
-            <optgroup label="Connections">
-              <option></option>
-            </optgroup> */}
           </Select>
           
     </div>
