@@ -10,7 +10,7 @@ export default {
             validation: Rule => Rule.required()
         },
         {
-            title: 'Field Enemy Mesh',
+            title: 'Enemy Mesh',
             name: 'mesh',
             type: 'file',
             fields: [
